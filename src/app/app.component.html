@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+
+    <div>
+        <input type="text" (keyup.enter)="onEnter(inputT.value); inputT.value = ''" #inputT>
+    </div>
+
+    <ul *ngFor="let str of inputEntrada">
+      <li>{{str}}</li>
+    </ul>
+
